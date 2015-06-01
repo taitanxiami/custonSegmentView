@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "customSegmentView.h"
+@interface ViewController ()<selectedBtnDelegate>
 
 @end
 
@@ -16,8 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    customSegmentView *btnView = [[customSegmentView alloc]initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 50)];
+    
+    btnView.titleColor = [UIColor whiteColor];
+    btnView.delegate = self;
+    btnView.isDefaultSelected = NO;
+    btnView.bottomViewColor = [UIColor redColor];
+    
+    [btnView setTitles:@[@"综合",@"排序",@"微博",@"体育"] withNum:4];
+    [self.view addSubview:btnView];
+
 }
+
+#pragma mark - ButtonView delegate
+-(void)didSelectedButton:(NSInteger )index
+{
+    
+    NSLog(@"sender index = %ld",index);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -14,6 +14,7 @@
 		84769F231B1C8EB400A36DE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84769F221B1C8EB400A36DE5 /* Images.xcassets */; };
 		84769F261B1C8EB400A36DE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84769F241B1C8EB400A36DE5 /* LaunchScreen.xib */; };
 		84769F321B1C8EB400A36DE5 /* CustomSegmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84769F311B1C8EB400A36DE5 /* CustomSegmentTests.m */; };
+		84769F3E1B1C8F5000A36DE5 /* customSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84769F3D1B1C8F5000A36DE5 /* customSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		84769F2B1B1C8EB400A36DE5 /* CustomSegmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84769F301B1C8EB400A36DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84769F311B1C8EB400A36DE5 /* CustomSegmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentTests.m; sourceTree = "<group>"; };
+		84769F3C1B1C8F5000A36DE5 /* customSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customSegmentView.h; sourceTree = "<group>"; };
+		84769F3D1B1C8F5000A36DE5 /* customSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customSegmentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		84769F141B1C8EB400A36DE5 /* CustomSegment */ = {
 			isa = PBXGroup;
 			children = (
+				84769F3B1B1C8F2100A36DE5 /* customSegment */,
 				84769F191B1C8EB400A36DE5 /* AppDelegate.h */,
 				84769F1A1B1C8EB400A36DE5 /* AppDelegate.m */,
 				84769F1C1B1C8EB400A36DE5 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				84769F301B1C8EB400A36DE5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84769F3B1B1C8F2100A36DE5 /* customSegment */ = {
+			isa = PBXGroup;
+			children = (
+				84769F3C1B1C8F5000A36DE5 /* customSegmentView.h */,
+				84769F3D1B1C8F5000A36DE5 /* customSegmentView.m */,
+			);
+			path = customSegment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				84769F1E1B1C8EB400A36DE5 /* ViewController.m in Sources */,
 				84769F1B1B1C8EB400A36DE5 /* AppDelegate.m in Sources */,
 				84769F181B1C8EB400A36DE5 /* main.m in Sources */,
+				84769F3E1B1C8F5000A36DE5 /* customSegmentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
