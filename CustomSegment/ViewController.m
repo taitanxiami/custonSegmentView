@@ -17,14 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    customSegmentView *btnView = [[customSegmentView alloc]initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 50)];
     
+    customSegmentView *btnView = [[customSegmentView alloc]initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 44)];
     btnView.titleColor = [UIColor whiteColor];
     btnView.delegate = self;
     btnView.isDefaultSelected = NO;
     btnView.bottomViewColor = [UIColor redColor];
     
-    [btnView setTitles:@[@"综合",@"排序",@"微博",@"体育"] withNum:4];
+    [btnView setTitles:@[@"综合",@"排序哦",@"新浪微博",@"体育"] withNum:4];
     [self.view addSubview:btnView];
 
 }
